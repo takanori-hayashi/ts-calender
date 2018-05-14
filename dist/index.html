@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ts smaple</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/myCalender.css">
+
+  <style>
+    body {
+      background: #efefef;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="js-calender"></div>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    const cal = document.getElementById('js-calender');
+    const calender = new myCalender(cal);
+  </script>
+</body>
+</html>

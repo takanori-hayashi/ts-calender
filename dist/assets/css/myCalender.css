@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.my-calender {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.my-calender__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-calender__years {
+  flex: 1;
+  font-size: 120%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.my-calender__year,
+.my-calender__month {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.my-calender__month {
+  min-width: 38px;
+}
+
+.my-calender__next,
+.my-calender__prev {
+  display: inline-block;
+  margin: 8px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.my-calender__next::after,
+.my-calender__prev::before {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-top: 4px;
+  border-top: 2px solid #333;
+  content: "";
+}
+
+.my-calender__next::after {
+  border-right: 2px solid #333;
+  transform: rotate(45deg);
+}
+
+.my-calender__prev::before {
+  border-left: 2px solid #333;
+  transform: rotate(-45deg);
+}
+
+.my-calender__day {
+  padding: 10px 5px;
+  color: #999;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.my-calender__date {
+  padding: 0 5px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.my-calender__date--today {
+  color: #26a69a;
+}
